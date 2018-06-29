@@ -20,7 +20,7 @@ def weather(message):
 
 
 def weath(message):
-    owm = pyowm.OWM("1a115174f1d6212efaf1390c09260d2e")
+    owm = pyowm.OWM("hidden API key")
     city = message.text
     weather = owm.weather_at_place(city)
     w = weather.get_weather()
@@ -57,7 +57,7 @@ def weather(message):
 
 
 def weath(message):
-    owm = pyowm.OWM("1a115174f1d6212efaf1390c09260d2e", language="ru")
+    owm = pyowm.OWM("hidden API key", language="ru")
     city = message.text
     weather = owm.weather_at_place(city)
     w = weather.get_weather()
